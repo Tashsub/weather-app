@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>About</title>
+</head>
+<body>
+    <div class="main-content text-center">
+        {{>header}}
+        <p>This is a small side project created as part of a course that was being taken. The app works using the following:</p>
+        <ul class="text-left">
+            <li>Makes use of the Weather Stack API</li>
+            <li>Makes use of the MapBox API</li>
+            <li>Creates a JSON Endpoint at /weather and fetches the data</li>
+            <li>Makes use of callbacks and async operations</li>
+            <li>Makes use of partials, creates view templates that are resusable</li>
+            <li>Error handling, ie putting in a '!' as the address</li>
+        </ul>
+    </div>
+    
+    {{>footer}}
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    <title>Weather</title>
+</head>
+<body>
+    <div class="main-content text-center">
+        {{>header}}
+        
+        <form>
+            <div class="form-group">
+                <label >Enter an address, postal code or anything that can be located on a map</label>
+                <input class="form-control" id="input" placeholder="Paris for example">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Search</button>
+        </form>
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+    </div>
+    <!-- Card -->
+    <div class="weather-card text-center mx-auto" id="weather-card" style="display:none;">
+        <div class="card" style="width: 23rem;">
+            <img class="card-img-top" src="/img/card-image.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Weather</h5>
+                <p class="card-text" id="forcast">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item" id="location">Cras justo odio</li>
+                <li class="list-group-item" id="percip">Vestibulum at eros</li>
+            </ul>
+        </div>
+    </div>
+    {{>footer}}
+    <script src="/js/index.js"></script>
+</body>
+</html>
