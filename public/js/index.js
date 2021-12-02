@@ -27,7 +27,7 @@ weatherForm.addEventListener('submit', (event)=>{
     let location = searchQuery.value; 
 
     //grab the data from the API endpoint
-    fetch('http://localhost:3000/weather?address=' + location).then((response)=>{
+    fetch('/weather?address=' + location).then((response)=>{
 
         //get the data
         response.json().then((data)=>{

@@ -2,6 +2,9 @@ const path = require('path');
 const hbs = require('hbs');
 const express = require('express');
 
+//heroku will use the port defined in the env file
+//if it fails it will use 3000
+const port = process.env.PORT || 3000;
 const app = express(); 
 
 console.log(__dirname);
@@ -110,6 +113,6 @@ app.get('*',(req,res)=>{
     });
 });
 
-app.listen(3000,()=>{
-    console.log('listening on port 3000');
+app.listen(port,()=>{
+    console.log('listening on port ' + port);
 });
