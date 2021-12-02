@@ -70,7 +70,7 @@ app.get('/weather',(req,res)=>{
     //if there is no address query in the search
     if(!req.query.address){
         return res.send({
-            error: 'Provide an address'
+            error: 'Provide an address.'
         });
     }
 
